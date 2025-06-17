@@ -777,11 +777,9 @@ class App(ctk.CTk):
         self.videos_status_count_label.configure(
             text=f"{LanguageManager.data['loading']} : {LoadManager.queued_load_count + LoadManager.active_load_count}"
                  f" | "
-                 f"{LanguageManager.data['downloading']} : {DownloadManager.queued_download_count + 
-                                                            DownloadManager.active_download_count}"
+                 f"{LanguageManager.data['downloading']} : {DownloadManager.queued_download_count + DownloadManager.active_download_count}"
                  f" | "
-                 f" {LanguageManager.data['converting']} : {VideoConvertManager.active_convert_count + 
-                                                            VideoConvertManager.queued_convert_count}"
+                 f" {LanguageManager.data['converting']} : {VideoConvertManager.active_convert_count + VideoConvertManager.queued_convert_count}"
         )
         self.net_speed_label.configure(
             text=f"{LanguageManager.data['download_speed']} : {ValueConvertUtility.convert_size(self.current_download_speed_bytes, decimal_points=3)}/s"
@@ -1582,11 +1580,9 @@ class App(ctk.CTk):
         self.videos_status_count_label.configure(
             text=f"{LanguageManager.data['loading']} : {LoadManager.queued_load_count + LoadManager.active_load_count}"
                  f" | "
-                 f"{LanguageManager.data['downloading']} : {DownloadManager.queued_download_count + 
-                                                            DownloadManager.active_download_count}"
+                 f"{LanguageManager.data['downloading']} : {DownloadManager.queued_download_count + DownloadManager.active_download_count}"
                  f" | "
-                 f" {LanguageManager.data['converting']} : {VideoConvertManager.active_convert_count + 
-                                                            VideoConvertManager.queued_convert_count}"
+                 f" {LanguageManager.data['converting']} : {VideoConvertManager.active_convert_count + VideoConvertManager.queued_convert_count}"
         )
     
     def update_total_videos_count_status(self, added_video_count, downloading_video_count, downloaded_video_count) -> None:
